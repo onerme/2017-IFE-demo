@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<style type="text/css">
+table tr td,th{border:1px solid #000;}
+</style>
+	<title>medo1</title>
+</head>
+<body>
+<img src="https://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/htmlcss.ec85cad580b3bfce.jpg" width="100%" height="300"alt="无法加载时显示" title="提示文字">
+<h1>一级标题</h1>
+<h2>二级标题</h2>
+<h3>三级标题</h3>
+<h4>四级标题</h4>
+<h5>五级标题</h5>
+<h6>六级标题</h6>
+	<p>这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落<a  href="http://ife.baidu.com/"  title="鼠标滑过显示的文本">点击进入百度前端技术学院</a>这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落<a href="http://ife.baidu.com/" title="鼠标滑过显示的文本" target="_blank">打开新标签百度前端技术学院</a>这是一个段落这是一个段落这是一个段落这是一个段落</p>
+	<hr>
+	<em>这是em强调</em>
+	<strong>这是strong强调</strong>
+	<q>这就话是引用的</q>
+	<blockquote>这是长文本引用<br />语义化，让你的网页更好的被搜索引擎理解<br />
+
+标签的用途：<br /> 我们学习网页制作时，常常会听到一个词，语义化。那么什么叫做语义化呢，说的通俗点就是：明白每个标签的用途（在什么情况下使用此标签合理）比如，网页上的文章的标题就可以用标题标签，网页上的各个栏目的栏目名称也可以使用标题标签。文章中内容的段落就得放在段落标签中，在文章中有想强调的文本，就可以使用 em 标签表示强调等等。</blockquote>
+
+<code>
+      hello world这是一行代码
+</code>
+<pre>
+#include <stdio.h>
+main()
+{
+	printf("hello world");
+
+	return 0;
+
+}
+</pre>
+<ul>
+	<li>无</li>
+	<li>序</li>
+	<li>列</li>
+	<li>表</li>
+</ul>
+
+<ol>
+	<li>有</li>
+	<li>序</li>
+	<li>列</li>
+	<li>表</li>
+</ol>
+<div id="板块名称">
+<table summary="表格简介文本">
+	<caption>表格标题</caption>
+
+	<tr>
+		<th>产品名称</th>
+		<th>品牌</th>
+		<th>库存量</th>
+		<th>入库时间</th>
+	</tr>
+	<tr>
+		<th>耳机</th>
+		<th>联想</th>
+		<th>500</th>
+		<th>2003-1-2</th>
+	</tr>
+	<tr>
+		<th>U盘</th>
+		<th>金士顿</th>
+		<th>120</th>
+		<th>2013-8-10</th>
+	</tr>
+</table>
+	
+</div>
+
+<form method="post" action="save.php">
+	<label for="userme">用户名:</label>
+	<input type="text" name="userme" value="默认文本">
+	<label for="pass">密码:</label>
+	<input type="password" name="pass" value="默认文本"><br />
+	<input type="submit" value="提交">
+	<input type="reset" name="" value="重置"><br />
+	<label>联系我们:</label><br />
+	<textarea rows="10" cols="10">十行十列的文本域</textarea><br />
+
+</form>
+<form name="名称" method="post" action="save.php">
+	你是否喜欢旅游？(单选)<br />
+	<input type="radio" name="名称" value="喜欢" checked="checked">喜欢
+	<input type="radio" name="名称" value="不喜欢">不喜欢
+	<input type="radio" name="名称" value="无所谓">无所谓<br />
+	你对那些运动感兴趣(多选)？<br />
+	<input type="checkbox" name="名称" value="跑步">跑步
+	<input type="checkbox" name="名称" value="打球" checked="checked">打球
+	<input type="checkbox" name="名称" value="登山" checked="checked">登山
+	<input type="checkbox" name="名称" value="健身">健身
+</form>
+<form name="名称">
+	<label>爱好：</label>
+	<select multiple="multiple">
+		<option value="读书" selected="selected">读书</option>
+		<option value="运动">运动</option>
+		<option value="音乐">音乐</option>
+		<option value="旅游">旅游</option>
+		<option value="购物">购物</option>
+	</select>
+	<select>
+		<option value="读书" selected="selected">读书</option>
+		<option value="运动">运动</option>
+		<option value="音乐">音乐</option>
+		<option value="旅游">旅游</option>
+		<option value="购物">购物</option>
+	</select>
+</form>
+
+<a href="mailto:dizhi@gmail.com ? cc=fajianren@gmail.com & bcc=密件抄送地址@gmail.com & subject=主题 & body=邮件内容">欢迎发邮件给我</a>
+<address>联系地址：银河系太阳系地球亚洲中华人民共和国</address>
+</body>
+</html>
