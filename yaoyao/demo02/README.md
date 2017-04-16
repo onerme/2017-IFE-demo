@@ -18,11 +18,11 @@
 * 代码中含有必要的注释
 * 不允许借助任何第三方组件库实现
 ## 在线学习参考资料
-＊[Web相关名词通俗解释][3]
-＊[MDN HTML入门][4]
-＊[慕课HTML+CSS基础教程视频][5]
-＊[JavaScript 表单验证][6]
-＊[HTML表单指南][7]
+* [Web相关名词通俗解释][3]
+* [MDN HTML入门][4]
+* [慕课HTML+CSS基础教程视频][5]
+* [JavaScript 表单验证][6]
+* [HTML表单指南][7]
 
 
   [1]: http://7xrp04.com1.z0.glb.clouddn.com/task_2_30_1.jpg
