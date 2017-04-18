@@ -1,35 +1,47 @@
-## 任务二：表单（二）多个表单项的动态校验
+## 动态数据绑定（一）进阶
 
 ### 任务目的
-- 加强对JavaScript的掌握
-- 熟悉常用表单处理逻辑
+
+ 1. 了解 getter 和 setter 
+ 2. 了解 new
+
 ### 任务描述
-- 如[示例图][1]中所示，基于[上一个任务][2]，在页面中添加多个表单
-- 要求:
-  - 表单获得焦点时，下方显示表单填写规则
-  - 表单失去焦点时校验表单内容
-  - 校验结果正确时，表单边框显示绿色，并在下方显示验证通过的描述文字
-  - 校验结果错误时，表单边框显示红色，并在下方显示验证错误的描述文字
-  - 点击提交按钮时，对页面中所有输入进行校验，校验结果显示方式同上。若所有表单校验通过，弹窗显示“提交成功”，否则显示“提交失败”
+这是“动态数据绑定”系列的第一题。
+
+我之前经常使用 Vue，后来不满足于仅仅使用它，我想了解其内部实现原理，所以就尝试学习其源码，获益匪浅。所以，如果你跟我一样，希望挑战这高难度的事情，那就开启这一系列吧！
+
+我们从最简单的开始。
+
+其中，动态数据绑定就是 Vue 最为基础，最为有用的一个功能。这个系列将分成5部分，一步一步来理解和实现这一功能。
+
+ok，我们从最简单的开始。给定任意一个对象，如何监听其属性的读取与变化？也就是说，如何知道程序访问了对象的哪个属性，又改变了哪个属性？ 举个例子。
+
+``` lasso
+let app1 = new Observer({
+  name: 'youngwind',
+  age: 25
+});
+
+let app2 = new Observer({
+  university: 'bupt',
+  major: 'computer'
+});
+
+// 要实现的结果如下：
+app1.data.name // 你访问了 name
+app.data.age = 100;  // 你设置了 age，新的值为100
+app2.data.university // 你访问了 university
+app2.data.major = 'science'  // 你设置了 major，新的值为 science
+```
+
+
+请实现这样的一个 Observer，要求如下：
+
+1. 传入参数只考虑对象，不考虑数组。
+2. new Observer返回一个对象，其 data 属性要能够访问到传递进去的对象。
+3. 通过 data 访问属性和设置属性的时候，均能打印出右侧对应的信息。
 ### 任务注意事项
-- 要求功能实现与任务描述中完全一致
-- 示例图仅为参考，样式不需要完全实现一致
-- 实现中，尽可能考虑代码的可读性和可复用性
-- 请注意代码风格的整齐、优雅
-- 代码中含有必要的注释
-- 不允许借助任何第三方组件库实现
+1. 不能使用任何第三方的库
+2. 程序执行环境为浏览器
 ### 在线学习参考资料
-- [Web相关名词通俗解释][3]
-- [MDN HTML入门][4]
-- [慕课HTML+CSS基础教程视频][5]
-- [JavaScript 表单验证][6]
-- [HTML表单指南][7]
-
-
-  [1]: http://7xrp04.com1.z0.glb.clouddn.com/task_2_30_1.jpg
-  [2]: http://ife.baidu.com/course/detail/id/97
-  [3]: https://www.zhihu.com/question/22689579
-  [4]: https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Introduction
-  [5]: http://www.imooc.com/learn/9
-  [6]: http://www.w3school.com.cn/js/js_form_validation.asp
-  [7]: https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Forms
+-  vue早期源码学习系列之一：如何监听一个对象的变化
