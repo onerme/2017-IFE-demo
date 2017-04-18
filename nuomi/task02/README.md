@@ -44,4 +44,7 @@ app2.data.major = 'science'  // 你设置了 major，新的值为 science
 1. 不能使用任何第三方的库
 2. 程序执行环境为浏览器
 ### 在线学习参考资料
--  vue早期源码学习系列之一：如何监听一个对象的变化
+-  [vue早期源码学习系列之一：如何监听一个对象的变化][1]
+
+
+  [1]: https://github.com/youngwind/blog/issues/84
