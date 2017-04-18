@@ -4,7 +4,7 @@
 加强对JavaScript的掌握
 熟悉常用表单处理逻辑
 ### 任务描述
-如示例图中所示，基于上一个任务，在页面中添加多个表单
+如[示例图][1]中所示，基于[上一个任务][2]，在页面中添加多个表单
 要求:
 表单获得焦点时，下方显示表单填写规则
 表单失去焦点时校验表单内容
@@ -19,15 +19,17 @@
 代码中含有必要的注释
 不允许借助任何第三方组件库实现
 ### 在线学习参考资料
-[Web相关名词通俗解释][1]
-[MDN HTML入门][2]
-[慕课HTML+CSS基础教程视频][3]
-[JavaScript 表单验证][4]
-[HTML表单指南][5]
+[Web相关名词通俗解释][3]
+[MDN HTML入门][4]
+[慕课HTML+CSS基础教程视频][5]
+[JavaScript 表单验证][6]
+[HTML表单指南][7]
 
 
-  [1]: https://www.zhihu.com/question/22689579
-  [2]: https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Introduction
-  [3]: http://www.imooc.com/learn/9
-  [4]: http://www.w3school.com.cn/js/js_form_validation.asp
-  [5]: https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Forms
+  [1]: http://7xrp04.com1.z0.glb.clouddn.com/task_2_30_1.jpg
+  [2]: http://ife.baidu.com/course/detail/id/97
+  [3]: https://www.zhihu.com/question/22689579
+  [4]: https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Introduction
+  [5]: http://www.imooc.com/learn/9
+  [6]: http://www.w3school.com.cn/js/js_form_validation.asp
+  [7]: https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Forms
