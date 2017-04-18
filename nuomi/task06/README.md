@@ -1,24 +1,25 @@
+# 自定义checkbox， radio样式普通
 
-## 任务六：UI组件之浮出层
-
-### 任务目的
-- 练习综合运用HTML、CSS、JavaScript实现局部功能
-- 练习对于代码的抽象与封装
-- 为第四阶段的RIA任务做准备
-### 任务描述
-参考如下设计图，实现一个浮出层的UI组件实现
-![enter description here][1]
-- 浮出层的中心默认在屏幕正中
-- 当浮出层显示时，屏幕滚动时，浮出层始终保持位置固定在屏幕正中，不随屏幕滚动而变化位置。或者禁止页面在有浮出层出现时滚动
-- 当浮出层显示时，点击浮出层以外的部分，默认为关闭浮出层。可以实现一个半透明的遮罩来挡住浮出层外的部分
-- 浮出层的样式、内容和逻辑尽量解耦
-- 提供使用JavaScript控制浮出层展现和关闭的接口
-- 浮出层的窗口大小可以是一个默认固定值，也可以是随内容变化而自适应变化，也可以是通过接口参数进行调整，自行根据自己能力进行选择
-- 有能力的同学可以实现浮出层的拖拽移动浮出窗口位置以及拖拽边缘来放大缩小浮出窗口的功能
-### 任务注意事项
-- 请注意代码风格的整齐、优雅
-- 代码中含有必要的注释
-- 可以合理选择使用其它第三方类库，但不建议
+## 任务目的
+1. 深入了解html label标签
+2. 了解CSS边框、背景、伪元素、伪类（注意和伪元素区分）等属性的设置
+3. 了解CSS中常见的雪碧图，并能自己制作使用雪碧图
+## 任务描述
+1. 参考 样例（[点击查看][1]），实现页面开发，要求实现效果基本一致
+## 任务注意事项
+1. 尝试背景图和伪元素两种不同方式实现，对比两种方式各自的优缺点。
+2. 注意测试不同情况，尤其是极端情况下的效果。
+## 参考资料
+1. [MDN label:][2] 了解html中label的基本知识
+2. [MDN background-position:][3] 了解背景图片定位相关知识
+3. [MDN :checked:][4] 了解input的`:checked`伪类的基本知识以及应用场景
+4. [MDN :before:][5]了解input的`:before`伪元素的基本知识
+5. [MDN :after:][6]了解input的`:after`伪元素的基本知识
 
 
-  [1]: http://7xrp04.com1.z0.glb.clouddn.com/task_3_37_1.jpg
+  [1]: http://p1.bqimg.com/567571/99322cf8c3283e42.png
+  [2]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
+  [3]: https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
+  [4]: https://developer.mozilla.org/en-US/docs/Web/CSS/:checked
+  [5]: https://developer.mozilla.org/en-US/docs/Web/CSS/::before
+  [6]: https://developer.mozilla.org/en-US/docs/Web/CSS/::after
