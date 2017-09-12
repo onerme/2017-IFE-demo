@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <title>demo2</title>
+    <style>
+        
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+    *{
+        font-family: "微软雅黑";
+      padding: 0;
+      margin: 0;  
+    }
+    .header{
+        background-color: #333333;
+        width: 100%;
+        height: 60px;
+    }
+    .header .header_in{
+        width: 1280px;
+        height: 100%;
+        margin: 0 auto;
+        /* background: red; */
+    }
+    .header .header_in .left{
+        width: 118px;
+        height: 100%;
+        float: left;
+        margin-left:  40px;
+        /* background: saddlebrown; */
+    }
+    .header .header_in .left .h1{
+        width: 100%;
+        height: 100%;
+    }
+    .header .header_in .left .h1>a{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    .header .header_in .right{
+        width: 332px;
+        height: 100%;
+        float: right;
+        /* background: indianred; */
+    }
+    .header .nav>li{
+        width: 60px;
+        height: 100%;
+        float: left;
+        margin-left: 20px;
+        /* background: skyblue; */
+    }
+    .header .nav>li>a{
+        color: white;
+        line-height: 60px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 12px;        
+    }
+    .content article{
+        width: 1238px;
+        height: 706px;
+        background: white;
+        margin: 20px auto 0;
+        border: 1px solid #9f9f9f;
+        border-bottom: 2px solid #9f9f9f;
+        border-right: 2px solid #9f9f9f;
+        box-sizing: border-box;
+        
+    }
+    .content article>h1{
+        margin: 39px 0 22px 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .content article>h2{
+        font-size: 15px;
+        font-weight: bold;
+        margin: 0 0 18px 20px;
+    }
+    .content article>h3{
+        font-size: 10px;
+        letter-spacing: 2px;
+        margin-left: 20px;
+    }
+    .content article>p{
+        margin: 21px 27px 41px 20px;
+        line-height: 25px;
+        text-indent:2em;
+    }
+    .content article>img{
+        margin-left: 20px;
+    }
+    .content article>ul{
+        margin: 18px 0 40px 40px;
+        list-style: none;        
+    }
+    .content .three{
+        width: 1238px;
+        height: 1513px;
+    } 
+    .content .three>ul{
+        width: 122px;
+        height: 1396px;
+        margin: 23px 0 20px 60px; 
+    }   
+    .content .three>ul>li{
+        width: 120px;
+        height: 124px;
+        border: 1px solid #9f9f9f;  
+        margin-bottom: 15px;      
+    }   
+    .content .three>ul>li>p{
+        text-align: center;
+    }    
+    .content .three>ul>li>img{
+        width: 100px;
+        height: 81px;
+        margin: 12px 10px 10px 10px;
+    }  
+    .content .four{
+        height: 497px;
+    }
+    .content .four>ol{
+        margin: 21px 0 22px 43px;
+        font-weight: bold;
+    }  
+    .content .four table{
+        margin-left: 20px;
+    } 
+    .content .four caption{
+        font-size: 16px;
+    }
+    .content .four .biaotou{
+        font-weight: bold;
+        color: white;
+        padding: 6px;
+    }
+    .content .four .biaodan{
+        height: 23px;
+        padding: 6px;
+    }
+    .content .content_bottom{
+        width: 1238px;
+        height: 500px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        margin-top: 20px;
+        border: 1px solid #cacaca;
+        border-width: 1px 2px 2px 1px;
+        padding: 30px 20px 20px;
+    }
+    .content .content_bottom>h2{
+        display: inline-block;
+        border-left: 3px solid #cacaca;
+        line-height: 38px;
+        font-size: 16px;
+        font-weight: bold;
+        text-indent: 10px;
+        letter-spacing: 2px;
+    }
+    .content .article{
+        width: 864px;
+        height: 357px;
+        font-size: 12px;        
+        margin: 10px 0px  14px 289px;
+    }
+    .content .article .line{
+        width: 227px;
+        height: 22px;
+    }
+    .content .article .pass{
+        margin-top: 10px;
+    }
+    .content .article span{
+        width: 84px;
+        line-height: 22px;
+        float: left;
+        text-align: right;
+    }
+    .content .article .line div{
+        float: right;
+        width: 129px;
+        line-height: 22px;
+    }
+    .content .article p{
+        margin: 12px 0 24px 100px;
+        color: #dedede;
+    }
+    .content .signup{
+        width: 1178px;
+        height: 40px;
+        background: #3355d0;
+        border:1px solid #cacaca;
+        border-radius: 10px;
+        box-sizing: border-box;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+   <div class="header">
+       <div class="header_in">
+           <div class="left">
+               <h1><a href="#" title="百度"><img src="http://ooswu775w.bkt.clouddn.com/17-9-10/1357643.jpg" alt=""></a></h1>
+           </div>
+           <div class="right">
+                <ul class="nav">
+                    <li><a href="#">导航链接一</a></li>
+                    <li><a href="#">导航链接一</a></li>
+                    <li><a href="#">导航链接一</a></li>
+                    <li><a href="#">导航链接一</a></li>
+                </ul>
+           </div>
+       </div>
+   </div>
+   <div class="content">
+    <article class="one">
+        <h1>文章一级标题</h1>
+        <h2>文章二级标题</h2>
+        <h3>文章作者 文章发表时间</h3>
+        <p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行了</br>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
+        <a href="http://ife.baidu.com">这里有一个链接连接到http://ife.baidu.com</a>
+        这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落</p>
+        <img src="http://ooswu775w.bkt.clouddn.com/17-9-10/72847054.jpg" alt="">
+        <p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
+            <a href="http://ife.baidu.com" target="_blank">这里有一个链接点击后打开新窗口连接到http://ife.baidu.com</a>
+            这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，</p>
+    </article>
+    <article class="two">
+            <h1>另一篇文章一级标题</h1>
+            <h2>文章二级标题</h2>
+            <h3>文章作者 文章发表时间</h3>
+            <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</br>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，  <a href="http://ife.baidu.com">这里有一个链接连接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，</p>
+            <img src="http://ooswu775w.bkt.clouddn.com/17-9-10/72847054.jpg" alt="">
+            <ul>
+                <li>列表项目一</li>
+                <li>列表项目二</li>
+                <li>列表项目三</li>
+            </ul>
+        </article>
+    <article class="three">
+        <h1>图片</h1>
+        <ul>
+            <li>
+                <p>好看的图片</p>
+            <img src="http://ooswu775w.bkt.clouddn.com/17-9-10/72847054.jpg" alt="">
+        </li>
+            <li>
+                <p>好看的图片</p>
+            <img src="http://ooswu775w.bkt.clouddn.com/17-9-10/72847054.jpg" alt="">
+        </li>
+            <li>
+                <p>好看的图片</p>
+            <img src="http://ooswu775w.bkt.clouddn.com/17-9-10/72847054.jpg" alt="">
+        </li>
+            <li>
+                <p>好看的图片</p>
+            <img src="http://ooswu775w.bkt.clouddn.com/17-9-10/72847054.jpg" alt="">
+        </li>
+            <li>
+                <p>好看的图片</p>
+            <img src="http://ooswu775w.bkt.clouddn.com/17-9-10/72847054.jpg" alt="">
+        </li>
+            <li>
+                <p>好看的图片</p>
+            <img src="http://ooswu775w.bkt.clouddn.com/17-9-10/72847054.jpg" alt="">
+        </li>
+            <li>
+                <p>好看的图片</p>
+            <img src="http://ooswu775w.bkt.clouddn.com/17-9-10/72847054.jpg" alt="">
+        </li>
+            <li>
+                <p>好看的图片</p>
+            <img src="http://ooswu775w.bkt.clouddn.com/17-9-10/72847054.jpg" alt="">
+        </li>
+            <li>
+                <p>好看的图片</p>
+            <img src="http://ooswu775w.bkt.clouddn.com/17-9-10/72847054.jpg" alt="">
+        </li>
+            <li>
+                <p>好看的图片</p>
+            <img src="http://ooswu775w.bkt.clouddn.com/17-9-10/72847054.jpg" alt="">
+        </li>
+        </ul>
+    </article>
+    <article class="four">
+        <h1>最后一篇文章一级标题</h1>
+        <h2>文章二级标题</h2>
+        <h3>文章作者 文章发表时间</h3>
+        <ol>
+            <li>排名1</li>
+            <li>排名2</li>
+            <li>排名3</li>
+        </ol>
+        <table border="1" width="1196px" height="148px" cellspacing="0">
+                <caption>下面是一个表格，我这里给表格加了一个border="1"好让你看出是一个表格，你们不用写html时候不需要加</caption>
+                <tr bgcolor="#333333" align="left">
+                    <th class="biaotou">表头</th>
+                    <th class="biaotou">表头</th>
+                    <th class="biaotou">表头</th>                    
+                </tr>
+                <tr bgcolor="white">
+                    <td class="biaodan">表内容单元格</td>
+                    <td class="biaodan">表内容单元格</td>
+                    <td class="biaodan">表内容单元格</td>                    
+                </tr>
+                <tr bgcolor="white">
+                    <td class="biaodan">表内容单元格</td>
+                    <td class="biaodan">表内容单元格</td>
+                    <td class="biaodan">表内容单元格</td>                    
+                </tr>
+                <tr bgcolor="white">
+                    <td class="biaodan">表内容单元格</td>
+                    <td class="biaodan">表内容单元格</td>
+                    <td class="biaodan">表内容单元格</td>                    
+                </tr>
+                <tr bgcolor="white">
+                    <td class="biaodan">表内容单元格</td>
+                    <td class="biaodan">表内容单元格</td>
+                    <td class="biaodan">表内容单元格</td>                    
+                </tr>
+                <tr bgcolor="dedede">
+                    <td class="biaodan">总计</td>
+                    <td  class="biaodan" colspan="2">1000</td>
+                </tr>
+            </table>
+    </article>
+    <div class="content_bottom">
+        <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
+        <div class="article">
+                <div class="line">
+                    <span>请输入邮箱地址</span>
+                        <div>
+                            <input type="text" value="这是一个文本输入框">
+                        </div>
+                </div>
+                <p>邮箱地址请按要求格式填写</p>                
+                <div class="line">
+                    <span>请输入密码</span>
+                    <div>
+                            <input type="password" value="111111111">
+                        </div>
+                </div>
+                <div class="line pass">
+                    <span>请再次输入密码</span>
+                    <div>
+                            <input type="password" value="111111111">
+                        </div>
+                </div>
+                <p>密码请为6-16位英文数字</p>                
+                <div class="line pass">
+                    <span>性别</span>
+                    <div>
+                            <input type="radio" value="男" checked>男
+                            <input type="radio" value="女">女
+                    </div>
+                </div>
+                <div class="line pass">
+                    <span>城市</span>
+                    <div>
+                        <form action="">
+                            <select name="cars">
+                            <option value="volvo">北京</option>
+                            <option value="saab">上海</option>
+                            <option value="fiat" selected>深圳</option>
+                            <option value="audi">广州</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="line pass">
+                    <span>爱好</span>
+                    <div>
+                            <input type="checkbox" name="vehicle" value="Bike">运动
+                            <input type="checkbox" name="vehicle" value="Car">科学
+                            <input type="checkbox" name="vehicle" value="Car">艺术
+                    </div>
+                </div>
+                <div class="line">
+                    <span>个人描述</span>
+                    <div>
+                        <textarea style="width:766px;height:80px">
+                            我是一个文本框。
+                        </textarea>
+                    </div>
+                </div>
+        </div>
+        <input class="signup" type="submit" value="确认提交">
+    </div>
+   </div>
+   <div class="footer"></div>
+</body>
+</html>
